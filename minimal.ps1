@@ -153,7 +153,7 @@ $tweaks = @(
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
@@ -219,6 +219,21 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function WinSCP {
+	Write-Output "Installing WinSCP"
+	choco install winscp -y
+}
+
+Function Putty {
+	Write-Output "Installing Putty"
+	choco install putty -y
+}
+
+Function Fiddler {
+	Write-Output "Installing Fiddler"
+	choco install fiddler -y
 }
 
 ##########
